@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Raw</title>
+
+    <style>
+    body {
+            margin: 0; 
+            background-image: url(../images/homeworkandreadingbg.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        header {
+            background-color: rgb(235, 64, 52);
+            color: white;
+            text-align: center;
+            margin: 10px;
+            height: 30px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .div-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin: 10px;
+            justify-content: center;
+        }
+
+        .background { 
+            background-color: rgb(96, 125, 181);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header> 
+        <div>
+            <a href="homework3.html" style="color: white;"><- Back</a>
+        </div>
+    </header>
+
+    <div class="div-layout">
+        <div class="background">
+                <img src="../images/raw_unedited.JPG" width="350">
+                <br>
+                <p><strong>Original Image -- Raw</strong></p>
+        </div>
+
+        <div class="background">
+            <img src="../images/raw_edited.jpg" width="350">
+            <br>
+            <p><strong>Edited Image -- JPG</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>
