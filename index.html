@@ -4,51 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen Paul Perion</title>
-    <link rel="stylesheet" href="css/main.css">
 
     <style>
 
         body {
             margin: 0; 
-            background-image: url("mainpage4.png");
+            background-image: url("homeworkpage.jpg");
             background-size: cover;
             background-position: center;
             font-family:'Courier New', Courier, monospace;
         }
 
+        /* HEADER */
         header {
             background-color: rgb(235, 64, 52);
             color: white;
             text-align: center;
-            margin: 10px;
-            height: 30px;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
-        }
-
-        .header-div-layout {
-            display: inline-block;
-            margin: 8px;
-            vertical-align: center;
-        }
-
-        .div-layout {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
             margin: 10px;
         }
 
-        .background { 
+        header a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 20px;
+        }
+
+        /* MAIN SECTION */
+        .section {
             background-color: rgb(96, 125, 181);
             color: white;
             padding: 20px;
+            border-radius: 10px;
+            width: 98%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.01);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        /* TWO-COLUMN LAYOUT (image + text) */
+        .two-column {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            align-items: start;
+            margin-top: 15px;
+        }
+
+        .image-left img {
+            width: 95%;
             border-radius: 8px;
         }
 
-        .imageborder {
+        .text-right {
+            background-color: rgba(255,255,255,0.15);
+            padding: 15px;
             border-radius: 8px;
         }
+
     </style>
 
 </head>
@@ -56,28 +90,49 @@
 <body>
 
     <header> 
-        <div class="header-div-layout">
-            <a href="index.html" style="color: white;">Home</a>
-            <a href="homework.html" style="color: white;">Homeworks & Readings</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="mainhomeworks.html">Homeworks</a>
+        <a href="readings.html">Readings</a>
     </header>
 
-    <div class="div-layout">
+    <div class="container">
 
-        <div>
-            <img src="headshot_media.jpeg" width="200" class="imageborder">
+        <!-- INTRO SECTION -->
+        <div class="section">
+            <h2>Introduction...</h2>
+
+            <div class="two-column">
+
+                <!-- LEFT: IMAGE -->
+                <div class="image-left">
+                    <img src="headshot_media.jpeg" alt="Headshot">
+                </div>
+
+                <!-- RIGHT: TEXT -->
+                <div class="text-right">
+                    <strong>Lab #6 | Stephen Paul Perion</strong>
+                    <br><br>
+                    <strong>Creative Statement</strong> 
+                    <br><br>
+                    My work focuses both on the simple things in life and fully living it out. 
+                    While I personally like a minimalist aesthetic with my works capturing a 
+                    minimalist design through its quiet and mundane atmosphere, I also love 
+                    working with bright colors and complicated techniques to fully highlight 
+                    my works to its potential. 
+                    <br><br>
+                    The contrast between the mundane and the extraordinary, though 
+                    polar-opposites, is something I love working with, because the principle 
+                    of art remains the same—I can interchange what I know from either the 
+                    minimal or maximal to better convey a story through my works. 
+                    <br><br>
+                    I am interested in improving my skill set through different art mediums 
+                    to fully convey and emphasize the stories my work is trying to tell.
+                </div>
+
+            </div>
         </div>
 
-        <div class="background">
-            <p> 
-                <strong>Lab #6 | Stephen Paul Perion</strong>
-                <br><br><br>
-                <strong>Creative Statement</strong> 
-                <br> My work focuses both on the simple things in life and fully living it out. While I personally like a minimalist aesthetic with my works capturing a minimalist design through its quiet and mundane atmosphere, I also love working with bright colors and complicated techniques to fully highlight my works to its potential. The contrast between the mundane and the extraordinary, though polar-opposites, is something I love working with, because the principle of art remains the same—I can interchange what I know from either the minimal or maximal to better convey a story through my works. I am interested in improving my skill set through different art mediums to fully convey and emphasize the stories my work is trying to tell. 
-                <br>
-            </p>
-        </div>  
-
     </div>
+
 </body>
 </html>
