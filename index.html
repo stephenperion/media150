@@ -6,7 +6,6 @@
     <title>Stephen Paul Perion</title>
 
     <style>
-
         body {
             margin: 0; 
             background-image: url("homeworkpage.jpg");
@@ -44,13 +43,13 @@
             margin: 20px;
         }
 
-        /* MAIN SECTION */
+        /* SECTION */
         .section {
             background-color: rgb(96, 125, 181);
             color: white;
             padding: 20px;
             border-radius: 10px;
-            width: 98%;
+            width: 100%;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
@@ -63,7 +62,7 @@
             margin-top: 0;
         }
 
-        /* TWO-COLUMN LAYOUT (image + text) */
+        /* TWO-COLUMN LAYOUT */
         .two-column {
             display: grid;
             grid-template-columns: 200px 1fr;
@@ -73,7 +72,7 @@
         }
 
         .image-left img {
-            width: 95%;
+            width: 100%;
             border-radius: 8px;
         }
 
@@ -83,8 +82,28 @@
             border-radius: 8px;
         }
 
-    </style>
+        /* ORAL IMAGE ONLY */
+        /* ORAL SECTION LAYOUT */
+        .section:nth-of-type(2) .two-column {
+            grid-template-columns: 1fr 1fr;
+        }
 
+        .oral-img {
+            width: 100%;
+            display: block;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .oral-img {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -100,15 +119,12 @@
         <!-- INTRO SECTION -->
         <div class="section">
             <h2>Introduction...</h2>
-
             <div class="two-column">
 
-                <!-- LEFT: IMAGE -->
                 <div class="image-left">
                     <img src="headshot_media.jpeg" alt="Headshot">
                 </div>
 
-                <!-- RIGHT: TEXT -->
                 <div class="text-right">
                     <strong>Lab #6 | Stephen Paul Perion</strong>
                     <br><br>
@@ -127,6 +143,24 @@
                     <br><br>
                     I am interested in improving my skill set through different art mediums 
                     to fully convey and emphasize the stories my work is trying to tell.
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ORAL PRESENTATION SECTION -->
+        <div class="section">
+            <h2>Oral Presentation...</h2>
+            <div class="two-column">
+
+                <div class="image-left">
+                    <img src="oralpresentationintropage.png" alt="oralpresentationintro" class="oral-img">
+                </div>
+
+                <div class="text-right">
+                    <a href="https://canva.link/tp7doapthp907zx" target="_blank"><b>Public Link: Oral Presentation</b></a>
+                    <br><br>
+                    <a href="https://canva.link/g6o77b3mtlmplsf" target="_blank"><b>Presentation Link: Oral Presentation</b></a>
                 </div>
 
             </div>
